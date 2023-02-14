@@ -1,0 +1,114 @@
+:root{
+    --mainColor: rgb(26, 24, 24);
+    --highlight: rgb(243, 219, 219);
+    --backHighlight: rgba(241, 236, 236, 0.1);
+
+}
+
+*{
+    font-family: monospace;
+    color: var(--highlight);
+}
+
+/* div{
+    border: 1px solid var(--highlight);
+} */
+
+body{
+
+    height: 100vh;
+    width: 99vw;
+    margin: 0px;
+    background-color : var(--mainColor);
+}
+
+.navbar{ 
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    height: 17%;
+    width: 100%;
+    background-color:var(--backHighlight);
+}
+
+.logo {
+    height: 90%;
+    margin: 5% 40% 5% 7%;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.button {
+    position: relative;
+    background-color: var(--highlight);
+    border: 3px solid black;
+    border-radius: 6%;
+    cursor:pointer;
+    padding: 12px;
+    margin: 5px;
+    font-size: 1.5em;
+    transition-duration: 0.4s;
+    
+    color: var(--mainColor);
+}
+
+.button:hover {
+    background-color: var(--mainColor);
+    color: var(--highlight);
+}
+
+
+
+
+.container{
+    /* border: 1px solid var(--highlight); */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading{
+    /* border: 1px solid var(--highlight); */
+    position: relative;
+    margin: 70px 0px 50px 70px;
+    padding: 50px;
+    width: 90%;
+    font-size: 3em;
+    text-align: left;
+    color: var(--highlight);
+    background-color: var(--backHighlight);
+}
+
+.moreInfo{
+    display: flex;
+    font-size: 0.5em;
+}
+
+.card {
+    border: 1px solid var(--highlight);
+    margin: 25px;
+    animation: loadingCard;
+    font-size: 1em;
+}
+
+@keyframes loadingCard{
+
+}
+
+.myPic{
+    width: 45%;
+    margin: 5px 0px 25px 25px;
+    border: 2px solid black;
+    border-radius: 100%;
+    left: 100px;
+    position: relative;
+    animation: loadingPic 1s 1;
+}
+
+@keyframes loadingPic{
+    0% { width: 0%; opacity: 0;}
+    100% { width: 45%; left: 100px; }
+}
+
+
