@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Ekansh Kandulna's site</title>
+</head>
+<body>
+
+    <div class = navbar>
+        <a href="#home"><img class = logo src="./pictures/ek.png" alt="eklogo"></a>
+        <img class = icon src="./pictures/mail.png" alt="">
+        <img class = icon src="./pictures/location.png" alt="">
+        <img class = icon src="./pictures/phone.png" alt="">
+        <!-- <button class = button> Email </button> -->
+        <!-- <button class = button> Phone </button>
+        <button class = button> Address </button> -->
+        <a href="https://drive.google.com/file/d/1DzDLUk75usg3watRX4QTTvhs56dC2s0O/view?usp=share_link" target = "_blank">
+            <!-- <button class = button> Download Resume </button> -->
+            <img class = icon src="./pictures/download.png" alt="">
+        </a>
+    </div>
+    
+    <div class = container id = "home">
+        <div class = heading>
+            <h1> Ekansh Kandulna </h1>
+            <p> Web/Software Developer </p>
+            <div class = moreInfo>
+                <a href="#experience"> <button class = button> Experience </button> </a>
+                <a href="#projects"> <button class = button> Projects </button> </a>
+                <a href="#education"> <button class = button> Education </button> </a>
+            </div>
+        </div>
+        <div>
+            <img class = myPic src="./pictures/mypic.jpg" alt="mypic">
+        </div>  
+    </div>
+
+    <div class = container id = "experience">
+        <div class = heading>
+            <h1> Experience </h1>
+            <p> Web/Software Developer </p>
+        </div>
+        <div>
+            <!-- <img class = myPic src="./pictures/mypic.jpg" alt="mypic"> -->
+        </div>  
+    </div>
+
+    <div class = container id = "projects">
+        <div class = heading>
+            <h1> Projects </h1>
+            <p> Web/Software Developer </p>
+        </div>
+        <div>
+            <!-- <img class = myPic src="./pictures/mypic.jpg" alt="mypic"> -->
+        </div>  
+    </div>
+
+    <div class = container id = "education">
+        <div class = heading>
+            <h1> Education </h1>
+            <p> Web/Software Developer </p>
+        </div>
+        <div>
+            <!-- <img class = myPic src="./pictures/mypic.jpg" alt="mypic"> -->
+        </div>  
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+# CSS
+
+:root{
+    --mainColor: rgb(56, 56, 105);
+    --highlight: rgb(255, 235, 235);
+    --backHighlight: rgb(223, 166, 166);
+
+}
+
+*{
+    font-family: monospace;
+    font-weight: 900;
+    color: var(--highlight);
+}
+
+/* div{
+    border: 1px solid var(--highlight);
+} */
+
+body{
+    height: 100vh;
+    width: 99vw;
+    margin: 0px;
+    background-color : var(--mainColor);
+    overflow:scroll;
+}
+
+.navbar{ 
+    /* border: 1px solid black; */
+    display: flex;
+    position: fixed;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 17%;
+    width: 100%;
+    padding: 0 4%;
+    z-index: 10;
+    opacity: 1;
+    /* overflow:hidden; */
+    background-color:var(--backHighlight);
+}
+
+.logo {
+    width: 150px;
+    height: 10%;
+    margin: 5px 900px 5px 50px;
+    /* border: 1px solid black; */
+    border-radius: 100%;
+}
+
+.icon {
+    width: 50px;
+    margin: 5px 30px;
+    cursor: pointer;
+}
+
+
+.button {
+    position: relative;
+    background-color: var(--highlight);
+    border: 2px solid black;
+    border-radius: 6%;
+    cursor:pointer;
+    padding: 12px;
+    margin: 5px 30px;
+    font-size: 1.6em;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    
+    color: var(--mainColor);
+}
+
+.button:hover {
+    background-color: var(--mainColor);
+    color: var(--highlight);
+}
+
+
+.container{
+    /* border: 1px solid var(--highlight); */
+    z-index: -1;
+    width: 100%;
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+}
+
+.heading{
+    /* border: 1px solid var(--highlight); */
+    position: relative;
+    margin: 70px 0px 50px 70px;
+    padding: 50px;
+    width: 70%;
+    font-size: 3em;
+    text-align: left;
+    color: var(--highlight);
+    background-color: var(--backHighlight);
+}
+
+.moreInfo{
+    display: flex;
+    font-size: 0.5em;
+}
+
+.card {
+    border: 1px solid var(--highlight);
+    margin: 25px;
+    animation: loadingCard;
+    font-size: 1em;
+}
+
+@keyframes loadingCard{
+
+}
+
+.myPic{
+    width: 45%;
+    margin: 5px 0px 25px 25px;
+    border: 4px solid white;
+    border-radius: 100%;
+    left: 100px;
+    position: relative;
+    animation: loadingPic 1s 1;
+}
+
+@keyframes loadingPic{
+    0% { width: 0%; opacity: 0;}
+    100% { width: 45%; left: 100px; }
+}
+
+
