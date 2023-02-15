@@ -1,4 +1,32 @@
-# backup of a good version
+#for arnav -->
+
+#*******THIS WILL ACTUALLY HELP US AND SPECIFICALLY ME TO HELP YOU MAKE YOUR CODE*******#
+#as we can work on the same code (yours) 
+
+#download git (after this step you might need to log in using github account)
+#make a new folder on your desktop, to pull the updated version of codes
+
+#right click when inside of that folder and select [open with code] (will open in vscode)
+# open a new terminal and run the following commands there :
+git clone https://github.com/EKanshK2001/Portfolio-Website.git
+
+
+#or
+
+#right click when inside of that folder and select [open git bash here]
+# open a new terminal and run the following commands there :
+git clone https://github.com/EKanshK2001/Portfolio-Website.git
+
+
+#these steps will help set up a folder for your version of code to edit (for me)
+#that you can easily clone
+
+
+#for doubts : refer this website : https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+#^ by the working directory it means your new desktop folder
+
+
+this is a backup of a good version
 
 <!DOCTYPE html>
 <html lang="en">
