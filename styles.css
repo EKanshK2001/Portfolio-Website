@@ -1,26 +1,38 @@
 :root{
-    --mainColor: rgb(56, 56, 105);
+    --mainColor: rgba(44, 44, 114, 0.801);
     --highlight: rgb(255, 235, 235);
-    --backHighlight: rgb(223, 166, 166);
+    --backHighlight: rgb(221, 153, 153);
 
 }
+
 
 *{
     font-family: monospace;
     font-weight: 900;
-    color: var(--highlight);
+    text-decoration: none;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    /* color: var(--highlight); */
 }
 
 /* div{
     border: 1px solid var(--highlight);
 } */
 
+HTML{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100vh;
-    width: 99vw;
+    width: 100vw;
     margin: 0px;
     background-color : var(--mainColor);
-    overflow:scroll;
+    overflow-x: hidden;
+}
+
+p{
+    text-align: justify;
 }
 
 .navbar{ 
@@ -57,7 +69,7 @@ body{
     position: relative;
     background-color: var(--highlight);
     border: 2px solid black;
-    border-radius: 6%;
+    border-radius: 4px;
     cursor:pointer;
     padding: 12px;
     margin: 5px 30px;
@@ -82,19 +94,25 @@ body{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    
     align-items: center;
 }
 
-.heading{
+.content{
     /* border: 1px solid var(--highlight); */
     position: relative;
     margin: 70px 0px 50px 70px;
     padding: 50px;
+    border-radius: 20px;
     width: 70%;
     font-size: 3em;
     text-align: left;
     color: var(--highlight);
     background-color: var(--backHighlight);
+}
+
+h1{
+    text-shadow: 1px 1px 4px gray;
 }
 
 .moreInfo{
@@ -105,12 +123,7 @@ body{
 .card {
     border: 1px solid var(--highlight);
     margin: 25px;
-    animation: loadingCard;
     font-size: 1em;
-}
-
-@keyframes loadingCard{
-
 }
 
 .myPic{
@@ -128,4 +141,49 @@ body{
     100% { width: 45%; left: 100px; }
 }
 
+.table, th, td {
+    border-radius: 50px;
+    border-collapse: collapse;
+    padding: 25px 70px;
+    background-color: var(--highlight);
+    color: var(--mainColor);
+}
 
+.table {
+    width: 90%;
+    height: 400px;
+}
+
+th{
+    border-right: 3px solid;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+.th-top{
+    border-bottom: 3px solid;
+    text-align: center;
+}
+
+.td-top{
+    border-bottom: 3px solid;
+    text-align: center;
+}
+
+
+ol {
+    border-radius: 50px;
+    background: var(--highlight);
+    color: var(--mainColor);
+    padding: 0 20px ;
+}
+  
+ul {
+    border-radius: 50px;
+    background: var(--highlight);
+    color: var(--mainColor);
+    padding: 15px 60px;
+}
